@@ -1,0 +1,190 @@
+
+Project Requirements
+To successfully build our e-commerce application and achieve the learning objectives, we need to establish clear project requirements. 
+These requirements outline the key features and functionalities that our application must encompass. Below, you'll find a comprehensive 
+list of project requirements based on our learning objectives:
+
+**Note:** We've already developed key functionalities for our e-commerce project in the "Module 6: API REST Development" 
+lessons, including models, schemas, and endpoints for Customers and Products. To save time and maintain consistency, 
+consider reusing the Flask-SQLAlchemy project as a foundation for Orders and Shopping Cart components. 
+This approach ensures a unified and efficient codebase, making it easier to integrate new features into the existing solution.
+
+
+
+
+1.Customer and CustomerAccount Management: DONE
+Create the CRUD (Create, Read, Update, Delete) endpoints for managing Customers and their associated CustomerAccounts:
+
+1.1. Create Customer: DONE
+Implement an endpoint to add a new customer to the database. Ensure that you capture essential customer information, 
+including name, email, and phone number. 
+
+1.2. Read Customer: DONE
+Develop an endpoint to retrieve customer details based on their unique identifier (ID). 
+Provide functionality to query and display customer information. Done
+
+1.3. Update Customer: DONE
+Create an endpoint for updating customer details, allowing modifications to the customer's name, email, and phone number.
+
+1.4. Delete Customer: DONE
+Implement an endpoint to delete a customer from the system based on their ID.
+
+
+2. Create CustomerAccount: DONE
+Develop an endpoint to create a new customer account. This should include fields for a unique username and a secure password.
+
+2.1. Read CustomerAccount: DONE
+Implement an endpoint to retrieve customer account details, including the associated customer's information.
+
+2.2. Update CustomerAccount: DONE
+Create an endpoint for updating customer account information, including the username and password.
+
+2.3. Delete CustomerAccount: DONE
+Develop an endpoint to delete a customer account.
+
+
+
+
+
+
+3. Product Catalog: DONE
+Create the CRUD (Create, Read, Update, Delete) endpoints for managing Products:
+
+3.1. Create Product: DONE
+Implement an endpoint to add a new product to the e-commerce database. Capture essential product details, 
+such as the product name and price.
+
+3.2. Read Product: DONE
+Develop an endpoint to retrieve product details based on the product's unique identifier (ID). 
+Provide functionality to query and display product information.
+
+3.3. Update Product: DONE
+Create an endpoint for updating product details, allowing modifications to the product name and price.
+
+3.4. Delete Product: DONE
+Implement an endpoint to delete a product from the system based on its unique ID.
+
+3.5. List Products: DONE
+Develop an endpoint to list all available products in the e-commerce platform. 
+Ensure that the list provides essential product information.
+
+B.3.6. View and Manage Product Stock Levels (Bonus): 
+Create an endpoint that allows to view and manage the stock levels of each product in the catalog.
+Administrators should be able to see the current stock level and make adjustments as needed.
+
+B.3.7. Restock Products When Low (Bonus):
+Develop an endpoint that monitors product stock levels and triggers restocking when they fall below a specified threshold. 
+Ensure that stock replenishment is efficient and timely.
+
+
+
+
+4. Order Processing: 
+Develop comprehensive Orders Management functionality to efficiently handle customer orders, ensuring that customers can 
+place, track, and manage their orders seamlessly.
+
+4.1. Place Order: DONE
+Create an endpoint for customers to place new orders, specifying the products they wish to purchase and providing 
+essential order details. Each order should capture the order date and the associated customer.
+
+4.2. Retrieve Order: Done
+Implement an endpoint that allows customers to retrieve details of a specific order based on its unique identifier (ID). 
+Provide a clear overview of the order, including the order date and associated products.
+
+4.3. Track Order: DONE
+Develop functionality that enables customers to track the status and progress of their orders. 
+Customers should be able to access information such as order dates and expected delivery dates.
+
+B.4.4. Manage Order History (Bonus): 
+Create an endpoint that allows customers to access their order history, listing all previous orders placed. 
+Each order entry should provide comprehensive information, including the order date and associated products.
+
+B.4.5. Cancel Order (Bonus): 
+Implement an order cancellation feature, allowing customers to cancel an order if it hasn't been shipped or completed. 
+Ensure that canceled orders are appropriately reflected in the system.
+
+B.4.6. Calculate Order Total Price (Bonus): 
+Include an endpoint that calculates the total price of items in a specific order, considering the prices of 
+the products included in the order. This calculation should be specific to each customer and each order, providing accurate 
+pricing information.
+
+
+
+Database Integration:
+1. Utilize Flask-SQLAlchemy to integrate a MySQL database into the application.
+2. Design and create the necessary Model to represent customers, orders, products, customer accounts, and any additional features.
+3. Establish relationships between tables to model the application's core functionality.
+4. Ensure proper database connections and interactions for data storage and retrieval.
+5. Data Validation and Error Handling:
+6. Implement data validation mechanisms to ensure that user inputs meet specified criteria (e.g., valid email addresses, proper formatting).
+7. Use try, except, else, and finally blocks to handle errors gracefully and provide informative error messages to guide users.
+
+
+User Interface (Postman):
+1. Develop Postman collections that categorize and group API requests according to their functionality. DONE
+Separate collections for Customer Management, Product Management, Order Management, and Bonus Features should be created for clarity.
+
+
+GitHub Repository:
+1. Create a GitHub repository for the project and commit code regularly.
+2. Maintain a clean and interactive README.md file in the GitHub repository, providing clear instructions on how to run the 
+application and explanations of its features.
+3. Include a link to the GitHub repository in the project documentation.
+
+
+Effective Project Communication:
+1. Create a video presentation or explanation of the E-commerce API project.
+2. Demonstrate the ability to explain technical concepts and project details in a concise and understandable manner.
+
+Submission:
+1. Upon completing the project, submit your code and video, including all source code files, and the README.md file in your 
+GitHub repository to your instructor or designated platform.
+
+Project Tips:
+Building an e-commerce application can be both exciting and challenging. To help you navigate this journey successfully and 
+achieve the project requirements, here are some valuable tips to keep in mind:
+
+1. Start with a Strong Foundation:
+Code Reusability: 
+As mentioned in the project requirements, consider reusing the Flask-SQLAlchemy project you developed during the 
+"Module 6: API REST Development" lessons. This will save you time and maintain consistency in your codebase, making it easier to 
+integrate new features.
+
+2. Plan Your Database Structure:
+Model Design: 
+Carefully design your database models to accurately represent customers, orders, products, customer accounts, and 
+any additional features you plan to incorporate. Ensure that you establish the necessary relationships between tables to model 
+your application's core functionality effectively.
+
+3. Data Validation and Error Handling:
+Data Validation: 
+Implement robust data validation mechanisms to ensure that user inputs meet specified criteria. 
+This is crucial for maintaining data integrity and preventing issues down the line.
+
+Error Handling: 
+Utilize try, except, else, and finally blocks to handle errors gracefully. Provide informative error messages that 
+guide users in troubleshooting and resolving issues.
+
+4. Thorough Testing with Postman:
+Postman Collections: 
+Create organized Postman collections that categorize and group API requests based on functionality. 
+This will make it easier to test and validate different parts of your application.
+Documentation: 
+Include clear documentation within your Postman collections and requests. This documentation should guide users on how to use 
+each request effectively. Comments and descriptions should be concise and informative.
+
+5. GitHub Repository and Version Control:
+Repository Management: 
+Establish a GitHub repository for your project and commit code regularly. Utilize version control to keep track of 
+changes and collaborate effectively with team members if applicable.
+README.md: 
+Maintain a clean and interactive README.md file in your GitHub repository. Provide clear instructions on how to run the 
+application and explanations of its features. Include a link to your GitHub repository in your project documentation.
+
+6. Effective Communication:
+Project Presentation: 
+Consider creating a video presentation or explanation of your E-commerce API project. This can be an excellent opportunity to 
+showcase your understanding of technical concepts and project details in a concise and understandable manner.
+Remember that building a robust e-commerce application is a process that involves careful planning, coding, testing, and documentation. 
+By following these project tips and adhering to the requirements, you'll be well on your way to creating a successful and 
+feature-rich e-commerce platform. Good luck with your project!
