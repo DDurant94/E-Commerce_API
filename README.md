@@ -4,7 +4,7 @@ Author: Daniel Durant
 
 Email:
 
-dannyjdurant@gmail.com
+<dannyjdurant@gmail.com>
 
 GitHub:
 
