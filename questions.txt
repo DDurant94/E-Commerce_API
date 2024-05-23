@@ -10,8 +10,6 @@ consider reusing the Flask-SQLAlchemy project as a foundation for Orders and Sho
 This approach ensures a unified and efficient codebase, making it easier to integrate new features into the existing solution.
 
 
-
-
 1.Customer and CustomerAccount Management: DONE
 Create the CRUD (Create, Read, Update, Delete) endpoints for managing Customers and their associated CustomerAccounts:
 
