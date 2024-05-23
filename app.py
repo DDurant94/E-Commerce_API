@@ -214,21 +214,6 @@ def get_order(id):
     order_data['products'].append(product_data)    
   return jsonify(order_data)
 
-@app.route("/orders/<id>",methods=["PUT"])
-def update_order(id):
-  order = Order.query.get_or_404(id)
-  try:
-    # Validates and deserialize the input
-    order_data = order_schema.load(request.json)
-  except ValidationError as err:
-    return jsonify(err.messages), 400
-  for product_id in order_data["products"]:
-    product = Product.query.get_or_404(product_id)
-    order.products.append(product)
-  db.session.commit()
-  return jsonify({"message": "Customer details updated successfully"}), 200
-
-
 @app.route("/orders",methods=["POST"])
 def create_order():
   try:

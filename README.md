@@ -2,9 +2,17 @@
 
 Author: Daniel Durant
 
+Email:
+
+dannyjdurant@gmail.com
+
 GitHub:
 
 <https://github.com/DDurant94>
+
+Postman API Interaction Source:
+
+<https://web.postman.co/workspace/1463a902-35c9-4f79-aa7f-16580712ff94>
 
 Summary:
 
